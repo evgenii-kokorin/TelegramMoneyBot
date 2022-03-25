@@ -25,5 +25,9 @@ def handle_text(message):
             answer = 'Это поговорка'
     # Отсылаем юзеру сообщение в его чат
     bot.send_message(message.chat.id, answer)
+
+def plus(a,b):
+    return a+b
+
 # Запускаем бота
 bot.polling(none_stop=True, interval=0)
